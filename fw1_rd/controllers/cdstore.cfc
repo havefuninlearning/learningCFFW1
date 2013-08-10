@@ -30,4 +30,8 @@
 	<cffunction name="moviesByActors">
 		<cfset variables.fw.service("cdstore.getMoviesByActor", "moviesList", #rc#)>
 	</cffunction>
+	
+	<cffunction name="editMovies">
+	
+	</cffunction>
 </cfcomponent>

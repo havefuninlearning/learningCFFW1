@@ -18,7 +18,8 @@
 	<div class="container">
 		<!--- <div class="row">
 			<div class="span12"> --->
-				<form name="staffloginForm" method="post" action="http://127.0.0.1:8501/fw1_rd/index.cfm?action=cdstore.validateStaff">
+				<cfoutput>
+					<form name="staffloginForm" method="post" action="#buildUrl('cdstore.validateStaff')#">
 							<label for="username">UserName</label>
 							<input name="username" id="username" type="text" value="" />
 
@@ -29,7 +30,8 @@
 							<input class="btn btn-primary" name="submit" type="submit" value="Login" />
 							</div>
 				
-				</form>
+					</form>
+				</cfoutput>
 				
 
 			<!--- </div>
